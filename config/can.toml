@@ -1,0 +1,39 @@
+[CAN1]
+hw_channel = 1
+hw_vendor = "pcan"
+alias = "WorkingCAN"
+db = ["./rbs_simple.dbc"]
+
+[CAN1.hw]
+clock_Hz = 80_000_000
+
+[CAN1.hw.flags]
+listen_only = false
+fd = false
+fd_non_iso = false
+ts_dev_rel = false
+ts_host_rel = false
+ts_drv_rel = false
+bus_load_info = false
+
+[CAN1.hw.nominal]
+brp = 2
+tseg1 = 63
+tseg2 = 16
+sjw = 16
+tsam = 16
+bitrate = 500_000
+sample_point = 8_000
+tq = 25
+bitrate_real = 0
+
+[CAN1.hw.data]
+brp = 0
+tseg1 = 0
+tseg2 = 0
+sjw = 0
+tsam = 0
+bitrate = 0
+sample_point = 0
+tq = 0
+bitrate_real = 0

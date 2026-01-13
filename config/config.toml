@@ -1,0 +1,12 @@
+[project]
+logopath = "project_logo.png"
+description = "Simple Restbus Example containing a timer and 2 messages"
+
+[project.status]
+text = "example"
+color = "green"
+
+[automation]
+type = "manual"
+active = true
+mode = "powerup"

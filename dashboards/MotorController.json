@@ -1,0 +1,161 @@
+{
+  "version": "0.1.0",
+  "name": "MotorController",
+  "base": {
+    "uuid": "dashboard-w6gsINaO",
+    "name": "MotorController",
+    "type": "dashboard",
+    "disabled": false
+  },
+  "children": [
+    {
+      "base": {
+        "uuid": "Kxa5X4ep-pDwNPghO4KiV",
+        "name": "projecttrigger-Kxa5X4ep-pDwNPghO4KiV",
+        "type": "projecttrigger",
+        "disabled": false
+      },
+      "layout": {
+        "x": 890,
+        "y": 10,
+        "w": 100,
+        "h": 50
+      },
+      "label": {
+        "value": "Project Trigger",
+        "pos": "top"
+      },
+      "projecttrigger": {}
+    },
+    {
+      "base": {
+        "uuid": "0Z9obM24GK1BUEtXUQUTT",
+        "name": "select-0Z9obM24GK1BUEtXUQUTT",
+        "type": "select",
+        "disabled": false
+      },
+      "layout": {
+        "x": 20,
+        "y": 10,
+        "w": 100,
+        "h": 50
+      },
+      "label": {
+        "value": "Select Mode",
+        "pos": "top"
+      },
+      "select": {
+        "options": "0:Sleep,1:Standby,2:Speed,3:Torque",
+        "initValue": "Sleep",
+        "variableType": "SysvarInt",
+        "variableName": "select_mode"
+      }
+    },
+    {
+      "base": {
+        "uuid": "5rM8o6Rw1-O_3ufB5jQud",
+        "name": "checkbox-5rM8o6Rw1-O_3ufB5jQud",
+        "type": "checkbox",
+        "disabled": false
+      },
+      "layout": {
+        "x": 220,
+        "y": 10,
+        "w": 60,
+        "h": 30
+      },
+      "label": {
+        "value": "Active",
+        "pos": "top"
+      },
+      "checkbox": {
+        "valueType": "integer",
+        "initValue": false,
+        "checkedValue": "1",
+        "uncheckedValue": "0",
+        "variableType": "SysvarInt",
+        "variableName": "crtl_activate"
+      }
+    },
+    {
+      "base": {
+        "uuid": "BDeQMVqICM2zme_Qe5W0U",
+        "name": "cantrace-BDeQMVqICM2zme_Qe5W0U",
+        "type": "cantrace",
+        "disabled": false,
+        "updateInterval": "200"
+      },
+      "layout": {
+        "x": 20,
+        "y": 150,
+        "w": 700,
+        "h": 370
+      },
+      "label": {
+        "value": "Can Trace 1",
+        "pos": "top"
+      },
+      "cantrace": {
+        "name": "CanTrace1",
+        "columns": [
+          {
+            "id": "t",
+            "name": "Time",
+            "charLen": 14,
+            "position": 0,
+            "isActive": true
+          },
+          {
+            "id": "ci",
+            "name": "Ch",
+            "charLen": 4,
+            "position": 1,
+            "isActive": true
+          },
+          {
+            "id": "ai",
+            "name": "Id",
+            "charLen": 7,
+            "position": 2,
+            "isActive": true
+          },
+          {
+            "id": "n",
+            "name": "Name",
+            "charLen": 13,
+            "position": 3,
+            "isActive": true
+          },
+          {
+            "id": "rx",
+            "name": "Dir",
+            "charLen": 4,
+            "position": 4,
+            "isActive": true
+          },
+          {
+            "id": "dl",
+            "name": "Dlc",
+            "charLen": 5,
+            "position": 5,
+            "isActive": true
+          },
+          {
+            "id": "d",
+            "name": "Data",
+            "charLen": 100,
+            "position": 6,
+            "isActive": true
+          }
+        ]
+      }
+    }
+  ],
+  "createdAt": "2026-01-12T07:31:50.317Z",
+  "layout": {
+    "x": 0,
+    "y": 0,
+    "w": 1000,
+    "h": 1000
+  }
+}
