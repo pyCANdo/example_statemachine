@@ -16,8 +16,8 @@
         "disabled": false
       },
       "layout": {
-        "x": 890,
-        "y": 10,
+        "x": 20,
+        "y": 20,
         "w": 100,
         "h": 50
       },
@@ -35,8 +35,8 @@
         "disabled": false
       },
       "layout": {
-        "x": 20,
-        "y": 10,
+        "x": 630,
+        "y": 30,
         "w": 100,
         "h": 50
       },
@@ -59,8 +59,8 @@
         "disabled": false
       },
       "layout": {
-        "x": 220,
-        "y": 10,
+        "x": 850,
+        "y": 30,
         "w": 60,
         "h": 30
       },
@@ -88,8 +88,8 @@
       "layout": {
         "x": 20,
         "y": 150,
-        "w": 700,
-        "h": 370
+        "w": 580,
+        "h": 400
       },
       "label": {
         "value": "Can Trace 1",
@@ -101,21 +101,21 @@
           {
             "id": "t",
             "name": "Time",
-            "charLen": 14,
+            "charLen": 12,
             "position": 0,
             "isActive": true
           },
           {
             "id": "ci",
             "name": "Ch",
-            "charLen": 4,
+            "charLen": 5,
             "position": 1,
             "isActive": true
           },
           {
             "id": "ai",
             "name": "Id",
-            "charLen": 7,
+            "charLen": 6,
             "position": 2,
             "isActive": true
           },
@@ -129,14 +129,14 @@
           {
             "id": "rx",
             "name": "Dir",
-            "charLen": 4,
+            "charLen": 5,
             "position": 4,
             "isActive": true
           },
           {
             "id": "dl",
             "name": "Dlc",
-            "charLen": 5,
+            "charLen": 7,
             "position": 5,
             "isActive": true
           },
@@ -148,6 +148,130 @@
             "isActive": true
           }
         ]
+      }
+    },
+    {
+      "base": {
+        "uuid": "pB1qmhsGsF7sY1zA06iSy",
+        "name": "mermaid-pB1qmhsGsF7sY1zA06iSy",
+        "type": "mermaid",
+        "disabled": false
+      },
+      "layout": {
+        "x": 620,
+        "y": 130,
+        "w": 330,
+        "h": 420
+      },
+      "label": {
+        "value": "Control State Diagram",
+        "pos": "top"
+      },
+      "mermaid": {
+        "diagramType": "graph TD",
+        "initialDefinition": "graph TD\n  A[Start] --> B{Decision}\n  B -- Yes --> C[OK]\n  B -- No --> D[Not OK]",
+        "variableType": "SysvarString",
+        "variableName": "state_mermaid"
+      }
+    },
+    {
+      "base": {
+        "uuid": "9PdWa0qp-QEDl6S4mFNH2",
+        "name": "textbox-9PdWa0qp-QEDl6S4mFNH2",
+        "type": "textbox",
+        "disabled": false
+      },
+      "layout": {
+        "x": 440,
+        "y": 10,
+        "w": 120,
+        "h": 40
+      },
+      "label": {
+        "value": "P",
+        "pos": "left"
+      },
+      "textbox": {
+        "readOnly": false,
+        "valueType": "string",
+        "initValue": "4.2",
+        "variableType": "SysvarFloat",
+        "variableName": "crtl_p_value"
+      }
+    },
+    {
+      "base": {
+        "uuid": "IHnLxpavvFuZGfCfGRMMz",
+        "name": "textbox-IHnLxpavvFuZGfCfGRMMz",
+        "type": "textbox",
+        "disabled": false
+      },
+      "layout": {
+        "x": 440,
+        "y": 50,
+        "w": 120,
+        "h": 30
+      },
+      "label": {
+        "value": "I",
+        "pos": "left"
+      },
+      "textbox": {
+        "readOnly": false,
+        "valueType": "string",
+        "initValue": "0.5",
+        "variableType": "SysvarFloat",
+        "variableName": "crtl_i_value"
+      }
+    },
+    {
+      "base": {
+        "uuid": "ajliR6a9g8R_gaMJYHX5I",
+        "name": "textbox-ajliR6a9g8R_gaMJYHX5I",
+        "type": "textbox",
+        "disabled": false
+      },
+      "layout": {
+        "x": 440,
+        "y": 90,
+        "w": 120,
+        "h": 30
+      },
+      "label": {
+        "value": "D",
+        "pos": "left"
+      },
+      "textbox": {
+        "readOnly": false,
+        "valueType": "string",
+        "initValue": "0.6",
+        "variableType": "SysvarFloat",
+        "variableName": "crtl_d_value"
+      }
+    },
+    {
+      "base": {
+        "uuid": "tH25E0BCFxP3NmKIHPPGP",
+        "name": "textbox-tH25E0BCFxP3NmKIHPPGP",
+        "type": "textbox",
+        "disabled": false
+      },
+      "layout": {
+        "x": 220,
+        "y": 30,
+        "w": 150,
+        "h": 30
+      },
+      "label": {
+        "value": "Target Speed / Torque",
+        "pos": "top"
+      },
+      "textbox": {
+        "readOnly": false,
+        "valueType": "integer",
+        "initValue": "0",
+        "variableType": "SysvarInt",
+        "variableName": "crlt_target_value"
       }
     }
   ],

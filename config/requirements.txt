@@ -1,2 +1,2 @@
-pyrbs==0.2.40
-pyrbs_core==0.1.88
+pyrbs==0.2.50
+pyrbs_core==0.1.119

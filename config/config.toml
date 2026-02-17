@@ -9,4 +9,4 @@ color = "green"
 [automation]
 type = "manual"
 active = true
-mode = "powerup"
+mode = "manual"

@@ -49,7 +49,7 @@ BO_ 256 Control_01: 7 Vector__XXX
  SG_ D_Value : 40|12@1+ (0.01,0) [0|40.95] "" Vector__XXX
  SG_ I_Value : 28|12@1+ (0.01,0) [0|40.95] "" Vector__XXX
  SG_ P_Value : 16|12@1+ (0.01,0) [0|40.95] "" Vector__XXX
- SG_ Target_Speed : 4|12@1+ (1,0) [0|4095] "rpm" Vector__XXX
+ SG_ Target_Value : 4|12@1+ (1,0) [0|4095] "rpm" Vector__XXX
  SG_ Mode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
 
 
