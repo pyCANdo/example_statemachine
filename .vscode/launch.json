@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    
+    // This setup can be used to run a pyrbs main.py file in VSCode Python Debugger, bypassing the runp and runws orchestration
+    // a connection to a Webbrowser via the default Browser GUI on https://<hostname>/pycando will not be available
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: pyCANdo main",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/run_rbs",
+            "cwd": "${workspaceFolder}/rbs",
+            "console": "integratedTerminal",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/rbs"
+                    }
+        }
+    ]
+}

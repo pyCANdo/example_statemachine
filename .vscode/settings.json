@@ -1,0 +1,10 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/rbs"
+    ],
+	"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
+    "workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#3975A4",
+		"titleBar.inactiveBackground": "#466278"
+    }
+}
